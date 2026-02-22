@@ -186,8 +186,8 @@ vec x = regspace(0, n);
 
 ```python
 x = []
-for _ in range(n): 
-    x.append(element_index)
+for i in range(n): 
+    x.append(i)
 ```
 
 <b style="color:green">Idioms:</b>
@@ -412,7 +412,7 @@ return is_match;
 - Descriptive names
 - Clarity in expressions
 - Straightforward flow
-- Readability of code & comments (DRY)
+- Readability of code & comments
 - Consistent conventions & idioms
 - Refactoring to improve
 
@@ -434,7 +434,7 @@ return is_match;
 
 <!-- _class: lead -->
 
-### Assert
+### Assert & Design by Contract
 
 ---
 
