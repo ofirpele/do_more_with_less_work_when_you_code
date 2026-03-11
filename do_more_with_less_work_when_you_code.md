@@ -166,9 +166,9 @@ for (size_t i = 0; i < x.size(); ++i) {
 <b style="color:green">One modern idiom:</b>
 
 ```c++
-auto x = vector<int>(n, 0);
-for (auto& x_i : x) {
+for (int i = 0; auto& x_i : x) {
     x_i = i;
+    ++i;
 }
 ```
 
@@ -262,12 +262,15 @@ leap_year = y % 4 == 0 && y % 100 != 0
             || y % 400 == 0;
 ```
 
-<b style="color:green">Good:</b>
+<b style="color:green">Better:</b>
 
 ```c
-leap_year = ((y % 4 == 0) && (y % 100 != 0))
-            || (y % 400 == 0);
+bool is_leap_year(unsigned int year) {
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+}
 ```
+
+<b style="color:green">Best:</b> dedicated year type
 
 ---
 
