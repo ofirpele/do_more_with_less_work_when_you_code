@@ -1,2 +1,2 @@
 * linguist-vendored
-*.pdf linguist-vendored=false
+*.pdf linguist-documentation=true
