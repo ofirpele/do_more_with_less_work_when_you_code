@@ -1,2 +1,2 @@
-* linguist-vendored
-*.pdf linguist-documentation=true
+*.md liguist-detectable 
+*.md -linguist-documentation
